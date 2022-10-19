@@ -135,8 +135,8 @@ module.exports = async (client, m) => {
             if (!m.isGroup && !['owner', 'create_bot'].includes(name) && chats && !isPrem && !users.banned && setting.groupmode) return client.sendMessageModify(m.chat, `Untuk bisa menggunakan bot di personal chat (PC) kamu harus mempunyai limits minimal *Rp. 5000* atau cara cepat dengan upgrade ke premium user.\n\nJika ingin upgrade ke premium silahkan masuk ke grup ini dan kirim *${prefixes[0]}owner*`, m, {
                title: 'Maaf akses di tolak',
                largeThumb: true,
-               thumbnail: await Func.fetchBuffer('https://telegra.ph/file/5b41c6d53b226403e8c9a.jpg'),
-               url: 'https://chat.whatsapp.com/KG9EraduWh2Bz3mdWbkHjl'
+               thumbnail: await Func.fetchBuffer('https://telegra.ph/file/397f6b32a2ce12583125e.jpg'),
+               url: 'https://chat.whatsapp.com/Gyz8wVqxbXv3XfVbB0qYjc'
             }).then(() => chats.lastchat = new Date() * 1)
             if (!['me', 'owner'].includes(name) && users && (users.banned || new Date - users.banTemp < global.timer)) return
             if (m.isGroup && !['activation'].includes(name) && groupSet.mute) continue
@@ -214,8 +214,8 @@ module.exports = async (client, m) => {
             if (!m.isGroup && chats && !isPrem && !users.banned && setting.groupmode) return client.sendMessageModify(m.chat, `Untuk bisa menggunakan bot di personal chat (PC) kamu harus mempunyai limits minimal *Rp. 5000* atau cara cepat dengan upgrade ke premium user.\n\nJika ingin upgrade ke premium silahkan masuk ke grup ini dan kirim *${prefixes[0]}owner*`, m, {
                tiltle: 'Maaf akses di tolak',
                largeThumb: true,
-               thumbnail: await Func.fetchBuffer('https://telegra.ph/file/5b41c6d53b226403e8c9a.jpg'),
-               url: 'https://chat.whatsapp.com/KG9EraduWh2Bz3mdWbkHjl'
+               thumbnail: await Func.fetchBuffer('https://telegra.ph/file/397f6b32a2ce12583125e.jpg'),
+               url: 'https://chat.whatsapp.com/Gyz8wVqxbXv3XfVbB0qYjc'
             }).then(() => chats.lastchat = new Date() * 1)
             if (setting.self && !['chatAI', 'exec'].includes(name) && !isOwner && !m.fromMe) continue
             if (!m.isGroup && ['chatAI'].includes(name) && body && Func.socmed(body)) continue
