@@ -168,14 +168,11 @@ exports.run = {
 ◦  ${isPrefix}list 
 ◦  ${isPrefix}owner 
 ◦  ${isPrefix}premium 
-◦  ${isPrefix}runtime
-❑ *T Q - T O*
-◦ Swift
-◦ FARUQOFC`
+◦  ${isPrefix}runtime`
       client.sendMessageModify(m.chat, captions, m, {
                title: 'Kanna bot',
                largeThumb: true,
-               thumbnail: await Func.fetchBuffer('https://telegra.ph/file/d5c31ad3dfeb93c67171c.jpg'),
+               thumbnail: await Func.fetchBuffer('https://telegra.ph/file/397f6b32a2ce12583125e.jpg'),
                url: ''
             })
       } catch (e) {
